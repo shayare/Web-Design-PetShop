@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+    <title>Monito PetShop</title>
+</head>
+<body>
+    <div class="inicial_page">
+    <header>
+        <picture class="logo_monito">
+            <img src="image/Frame.svg" alt="Logo">
+        </picture>
+
+    <div class="search_bar">
+        <span><ion-icon name="search" class="search_icon"></ion-icon></span>
+        <input type="text" placeholder="Search...">
+    </div>
+
+    <button>Join the community</button>
+
+    </header>
+
+        <div class="navigation">
+            <div class="menu_toggle"></div>
+            <ul>
+                <li class="list active">
+                    <a href="#" style="--clr:#003459;">
+                        <span class="icon"><ion-icon name="home"></ion-icon></span>
+                        <span class="text">Home</span>
+                    </a>
+                </li>
+
+                <li class="list">
+                    <a href="#" style="--clr:#155a8c;">
+                        <span class="icon"><ion-icon name="paper"></ion-icon></span>
+                        <span class="text">Category</span>
+                    </a>
+                </li>
+
+                <li class="list">
+                    <a href="#" style="--clr:#497494;">
+                        <span class="icon"><ion-icon name="paw"></ion-icon></span>
+                        <span class="text">About</span>
+                    </a>
+                </li>
+
+                <li class="list">
+                    <a href="#" style="--clr:#a5becf;">
+                        <span class="icon"><ion-icon name="call"></ion-icon></span>
+                        <span class="text">Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script>
+        let menu_toggle = document.querySelector('.menu_toggle');
+        let navigation = document.querySelector('.navigation');
+
+        menu_toggle.onclick = function(){
+            navigation.classList.toggle('active')
+        }
+
+        let list = document.querySelectorAll('.list');
+        function activeLink(){
+            list.forEach((item) => 
+            item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) => 
+        item.addEventListener('click', activeLink));
+    </script>
+
+    <main>
+        <div class="texts">
+            <h1>One more friend</h1>
+            <h2>Thousands more fun!</h2>
+            <p>Having a pet means you have more joy, a new friend, a happy person who will always be with you to have fun. We have 200+ different pets that can meet your needs!</p>
+
+            <div class="btns-main">
+                <button><ion-icon name="play-circle"></ion-icon>View Intro</button>
+                <button>Explore Now</button>
+            </div>
+        </div>
+    </main>
+    </div>
+</body>
+</html>
