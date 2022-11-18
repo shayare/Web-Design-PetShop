@@ -10,32 +10,41 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
 
-    <link rel="icon" href="./favicon.png" type="image/png">
+    <link rel="icon" type="image/png" href="image/racao-para-animais-de-estimacao.png">
 
     <title>Monito PetShop</title>
 </head>
+
 <body>
+
+        <!--=================================-->
+                <!--Paginas Iniciais-->
+        <!--=================================-->
+
     <div class="inicial_page">
+
         <picture><img src="" alt="" class="nada_so_pra_funcionar_o_de_baixo"></picture>
-        <picture>
-            <img src="image/Rectangle 2.svg" alt="retangulo" class="retangulo_bege">
-        </picture>
-        <picture class="retangulo_8">
-            <img src="image/Rectangle 8.svg" alt="retangulo">
-        </picture>
+        <picture><img src="image/Rectangle 2.svg" alt="retangulo" class="retangulo_bege"></picture>
+        <picture class="retangulo_8"><img src="image/Rectangle 8.svg" alt="retangulo"></picture>
+
+        <!--=================================-->
+                    <!--Header-->
+        <!--=================================-->
+
     <header>
-        <picture class="logo_monito">
-            <img src="image/Frame.svg" alt="Logo">
-        </picture>
+        <picture class="logo_monito"><img src="image/Frame.svg" alt="Logo"></picture>
 
-    <div class="search_bar">
-        <span><ion-icon name="search" class="search_icon"></ion-icon></span>
-        <input type="text" placeholder="Search...">
-    </div>
+        <div class="search_bar">
+            <span><ion-icon name="search" class="search_icon"></ion-icon></span>
+            <input type="text" placeholder="Search...">
+        </div>
 
-    <button>Join the community</button>
-
+        <button>Data access</button>
     </header>
+
+        <!--=================================-->
+                    <!--Navegação-->
+        <!--=================================-->
 
         <div class="navigation">
             <div class="menu_toggle"></div>
@@ -48,21 +57,21 @@
                 </li>
 
                 <li class="list">
-                    <a href="#" style="--clr:#155a8c;">
-                        <span class="icon"><ion-icon name="paper"></ion-icon></span>
-                        <span class="text">Category</span>
-                    </a>
-                </li>
-
-                <li class="list">
-                    <a href="#" style="--clr:#497494;">
+                    <a href="#tela_one_more_friend_hr" style="--clr:#155a8c;">
                         <span class="icon"><ion-icon name="paw"></ion-icon></span>
                         <span class="text">About</span>
                     </a>
                 </li>
 
                 <li class="list">
-                    <a href="#" style="--clr:#a5becf;">
+                    <a href="#category_page" style="--clr:#497494;">
+                        <span class="icon"><ion-icon name="paper"></ion-icon></span>
+                        <span class="text">Category</span>
+                    </a>
+                </li>
+
+                <li class="list">
+                    <a href="#footer-end" style="--clr:#a5becf;">
                         <span class="icon"><ion-icon name="call"></ion-icon></span>
                         <span class="text">Contact</span>
                     </a>
@@ -90,25 +99,208 @@
         item.addEventListener('click', activeLink));
     </script>
 
-    <main>
-        <div class="texts">
-            <h1>One more friend</h1>
-            <h2>Thousands more fun!</h2>
-            <p>Having a pet means you have more joy, a new friend, a happy<br> person who will always be with you to have fun. We have 200+<br> different pets that can meet your needs!</p>
+        <!--=================================-->
+                    <!--Main-->
+        <!--=================================-->
 
-            <div class="btns-main">
-                <button>Login<ion-icon name="person"></ion-icon></button>
-                <button>Explore Now</button>
+        <main>
+            <div class="texts">
+                <h1>One more friend</h1>
+                <h2>Thousands more fun!</h2>
+                <p>Having a pet means you have more joy, a new friend, a happy<br> person who will always be with you to have fun. We have 200+<br> different pets that can meet your needs!</p>
+
+                <div class="btns-main">
+                    <button id="dialog_login">Login<ion-icon name="person"></ion-icon></button>
+                    <button>Explore Now</button>
+                </div>
             </div>
-        </div>
-    </main>
+        </main>
     </div>
 
-    <section class="tela_one_more_friend">
+        <!--=================================-->
+                    <!--Sobre-->
+        <!--=================================-->
+
+    <section class="tela_one_more_friend" id="tela_one_more_friend_hr">
         <section class="about_one">
-            <h1>About one more friend</h1>
-            <h2>Thousands more fun!</h2>
+            <div class="about_texts">
+                <h1>About one <br>more friend</h1>
+                <h2>Thousands more fun!</h2>
+                <p>We offer several services and products, <br> register your pets so you don't miss any promotions.</p>
+            </div>
+            <div class="about_cad">
+                <button id="dialog_login">Login<ion-icon name="heart-empty"></ion-icon></button>
+                <button>Register</button>
+            </div>
+        </section>
+
+        <!--=================================-->
+                <!--Beneficios-->
+        <!--=================================-->
+        <section class="benefits_pet">
+            <div class="benefits_pet_container">
+                <h1>What are the benefits of adopting a pet?</h1>
+            </div>
+            <div class="benefits_cards_container">
+                <div class="cards">
+                    <picture><img src="image/cenoura.png" alt="cenoura"></picture>
+                    <p>Your pet will be the kind of friend that will be with you through the best of times, happy and sad.</p>
+                </div>
+
+                <div class="cards">
+                    <picture><img src="image/arco-iris.png" alt="arco-iris"></picture>
+                    <p>It will make your life much cozier, and bring a lot of happiness to your home.</p>
+                </div>
+
+                <div class="cards">
+                    <picture><img src="image/coracao.png" alt="coracao"></picture>
+                    <p>In addition to the joy he will bring you, you will also be able to make him happy, and help stray pets to have a home.</p>
+                </div>
+            </div>
         </section>
     </section>
+
+        <!--=================================-->
+                    <!--Categoria-->
+        <!--=================================-->
+
+    <section class="category" id="category_page">
+            <div class="category_textos">
+                <h1>Category</h1>
+                <h2>Take a look at some of our pets</h2>
+            </div>
+            <div class="category_container">
+                <div class="voltar"><img src="image/angle-left.png" alt=""></div>
+                <div class="proximo"><img src="image/angle-right.png" alt=""></div>
+        
+                <div class="carousel-inner">
+                    <div id="atual" class="item" href="#one!"><img src="image/image 2.svg"></div>
+                    <div class="item" href="#two!"><img src="image/image 3.svg"></div>
+                    <div class="item" href="#three!"><img src="image/image 2_3.svg"></div>
+                    <div class="item" href="#four!"><img src="image/image 4.svg"></div>
+                    <div class="item" href="#five!"><img src="image/image 5.svg"></div>
+                    <div class="item" href="#five!"><img src="image/image 6.svg"></div>
+                    <div class="item" href="#five!"><img src="image/image 7.svg"></div>
+                    <div class="item" href="#five!"><img src="image/image 8.svg"></div>
+                </div>
+            </div>
+        <div class="balls_carousel"></div>
+
+        <div class="carousel_texts">
+            <div class="carousel_texts_container">
+                <h2>MO231 - Pomeranian White</h2>
+                <h3>Gene: Male &nbsp;&bull; Age: 02 months</h3>
+            </div>
+            <div class="carousel_texts_container">
+                <h2>MO502 - Poodle Tiny Yellow</h2>
+                <h3>Gene: Male &nbsp;&bull; Age: 02 months</h3>
+            </div>
+            <div class="carousel_texts_container">
+                <h2>MO231 - Pomeranian White</h2>
+                <h3>Gene: Male &nbsp;&bull; Age: 02 months</h3>
+            </div>
+            <div class="carousel_texts_container">
+                <h2>MO102 - Poodle Tiny Sepia</h2>
+                <h3>Gene: Male &nbsp;&bull; Age: 02 months</h3>
+            </div>
+            <div class="carousel_texts_container">
+                <h2>MO512 - Alaskan Malamute Grey</h2>
+                <h3>Gene: Male &nbsp;&bull; Age: 02 months</h3>
+            </div>
+            <div class="carousel_texts_container">
+                <h2>MO231 - Pembroke Corgi Cream</h2>
+                <h3>Gene: Male &nbsp;&bull; Age: 02 months</h3>
+            </div>
+            <div class="carousel_texts_container">
+                <h2>MO502 - Pembroke Corgi Tricolor</h2>
+                <h3>Gene: Male &nbsp;&bull; Age: 02 months</h3>
+            </div>
+            <div class="carousel_texts_container">
+                <h2>MO231 - Pomeranian White</h2>
+                <h3>Gene: Male &nbsp;&bull; Age: 02 months</h3>
+            </div>
+        </div>
+
+        <picture class="dog_fundo"><img src="image/dog_fundo.png" alt="dog"></picture>
+        <picture class="osso_fundo"><img src="image/osso.png" alt="osso"></picture>
+    </section>
+    
+        <!--=================================-->
+                    <!--Footer-->
+        <!--=================================-->
+
+    <footer id="footer-end">
+        <div class="footer_container">
+            <div class="footer_register">
+                <h1>Register now so you don't miss our programs</h1>
+                <div class="footer_email">
+                    <input type="email" placeholder="Enter your Email">
+                    <button type="submit">Subcribe Now</button>
+                </div>
+            </div>
+            <div class="pages_and_social">
+                <div class="pages">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Category</a>
+                </div>
+                <div class="social">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+                    </a>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+                    </a>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                    </a>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <hr width = 100%>
+
+            <div class="end">
+                <p>&copy; 2022 Monito. All rights reserved.</p>
+                <picture class="logo_monito"><img src="image/Frame.svg" alt="Logo"></picture>
+                <div class="terms">
+                    <p>Terms of Service</p>
+                    <p>Privacy Policy</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+        <!--=================================-->
+                    <!--Dialog-->
+        <!--=================================-->
+
+        <dialog>
+            <div class="dialog_container">
+                <div class="dialog_conteudo">
+                <h1>WELCOME</h1>
+                <h2>Login client</h2>
+                <form action="#">
+                        <input type="email" placeholder="example@gmail.com">
+                        <div class="senha">
+                            <input type="password" placeholder="password" name="password" id="password">
+                            <img src="image/eye.png" alt="eye" id="eye_img">
+                        </div>
+                    <div class="form_btns">
+                        <button>Continue</button>
+                        <button>Register</button>
+                    </div>
+                    <div class="form_btns2">
+                        <button type="reset">Clear</button>
+                        <button id="come_back">Come back</button>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </dialog>
 </body>
+    <script type="text/javascript" src="controls.js"></script>  
+    <script type="text/javascript" src="dialog.js"></script>  
 </html>
